@@ -18,7 +18,7 @@ env:
 go:
   - "1.13"
 
-go_import_path: github.com/kong/kubernetes-ingress-controller
+go_import_path: github.com/yaoice/kubernetes-ingress-controller
 
 before_script:
 - go get golang.org/x/lint/golint

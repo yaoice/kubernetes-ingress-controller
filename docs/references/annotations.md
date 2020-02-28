@@ -64,11 +64,11 @@ spec:
   template:
      spec:
        containers:
-         - name: kong-ingress-internal-controller
+         - name: kong-ingress-pkg-controller
            args:
              - /kong-ingress-controller
-             - '--election-id=ingress-controller-leader-internal'
-             - '--ingress-class=kong-internal'
+             - '--election-id=ingress-controller-leader-pkg'
+             - '--ingress-class=kong-pkg'
 ```
 
 ### Multiple unrelated Kong Ingress Controllers
@@ -145,7 +145,7 @@ guide for details on how to use this annotation.
 
 ## `configuration.konghq.com/protocol`
 
-This annotation sets a protocol — `http`, `https`, `grpc`, or `grpcs` —
+This annotation sets a protocol ï¿½ `http`, `https`, `grpc`, or `grpcs` ï¿½
 on a Service resource. The protocol is used for communication between a 
 [Kong Service](https://docs.konghq.com/latest/admin-api/#service-object) and 
 a Kubernetes Service, internally in the Kubernetes cluster.
@@ -154,8 +154,8 @@ a Kubernetes Service, internally in the Kubernetes cluster.
 
 This annotation sets a pair of protocols (`http`,`https`) or (`grpc`,`grpcs`)
 on an Ingress resource. The protocols are used for communication between the
-Ingress point — in this case,
-a [Kong Route](https://docs.konghq.com/latest/admin-api/#route-object) — and
+Ingress point ï¿½ in this case,
+a [Kong Route](https://docs.konghq.com/latest/admin-api/#route-object) ï¿½ and
 the external user or service.
 
 ## `configuration.konghq.com/client-cert`

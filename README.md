@@ -61,7 +61,7 @@ $ helm install kong/kong
 ```
 
 If you are setting up Kong for Kubernetes Enterprise, please
-follow along [this guide](https://github.com/Kong/kubernetes-ingress-controller/blob/master/docs/deployment/k4k8s-enterprise.md).
+follow along [this guide](https://github.com/yaoice/kubernetes-ingress-controller/blob/master/docs/deployment/k4k8s-enterprise.md).
 
 Follow the [Getting Started guide][getting-started-guide] to start
 using Ingress in Kubernetes.
@@ -104,7 +104,7 @@ You can also talk to the developers behind Kong in the
 Kubernetes Slack server.
 
 If you've spotted a bug, please open an issue
-on our [Github](https://github.com/kong/kubernetes-ingress-controller/issues).
+on our [Github](https://github.com/yaoice/kubernetes-ingress-controller/issues).
 
 ## License
 

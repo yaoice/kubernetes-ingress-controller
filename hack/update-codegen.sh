@@ -3,7 +3,7 @@
 export GO111MODULE=on
 
 VERSION="kubernetes-1.15.3"
-PACKAGE_NAME=github.com/kong/kubernetes-ingress-controller
+PACKAGE_NAME=github.com/yaoice/kubernetes-ingress-controller
 SCRIPT_ROOT=$(dirname ${BASH_SOURCE})/..
 
 if [[ ! -d /tmp/code-generator ]];
@@ -17,7 +17,7 @@ fi
 
 /tmp/code-generator/generate-groups.sh \
 all \
-${PACKAGE_NAME}/internal/client/configuration \
-${PACKAGE_NAME}/internal/apis \
+${PACKAGE_NAME}/pkg/client/configuration \
+${PACKAGE_NAME}/pkg/apis \
 configuration:v1 \
 --go-header-file ${SCRIPT_ROOT}/hack/boilerplate.go.txt

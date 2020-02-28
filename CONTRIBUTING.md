@@ -11,7 +11,7 @@ merged in faster.
 
 If you're new to the project and want to help, but don't know where to start,
 look for "Help wanted" or "Good first issue" labels in our
-[issue tracker](https://github.com/Kong/kubernetes-ingress-controller/issues).
+[issue tracker](https://github.com/yaoice/kubernetes-ingress-controller/issues).
 Alternatively, read our documentation and fix or
 improve any issues that you see. We really value documentation contributions
 since that makes life easier for a lot of people.
@@ -21,7 +21,7 @@ make without coding:
 
 - Reporting a bug
 - Helping other members of the community on the
-  [support channels](https://github.com/Kong/kubernetes-ingress-controller#seeking-help)
+  [support channels](https://github.com/yaoice/kubernetes-ingress-controller#seeking-help)
 - Fixing a typo in the code
 - Fixing a typo in the documentation
 - Providing your feedback on the proposed features and designs
@@ -120,7 +120,7 @@ Please check the [deployment guide](/docs/deployment/README.md)
 To run unit-tests, just run
 
 ```console
-$ cd $GOPATH/src/github.com/kong/kubernetes-ingress-controller
+$ cd $GOPATH/src/github.com/yaoice/kubernetes-ingress-controller
 $ make test
 ```
 

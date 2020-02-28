@@ -106,7 +106,7 @@ func TestOverrideViaCLIFlags(t *testing.T) {
 		"--admin-ca-cert-file", "/path/to/ca-cert",
 
 		"--watch-namespace", "foons",
-		"--ingress-class", "kong-internal",
+		"--ingress-class", "kong-pkg",
 		"--election-id", "new-election-id",
 
 		"--publish-service", "published-kong-proxy",
@@ -117,7 +117,7 @@ func TestOverrideViaCLIFlags(t *testing.T) {
 		"--sync-period", "10s",
 		"--sync-rate-limit", "0.9",
 
-		"--apiserver-host", "kube-apiserver.internal",
+		"--apiserver-host", "kube-apiserver.pkg",
 		"--kubeconfig", "/path/to/kubeconfig",
 
 		"--profiling=false",
@@ -141,7 +141,7 @@ func TestOverrideViaCLIFlags(t *testing.T) {
 		KongAdminCACertPath:    "/path/to/ca-cert",
 
 		WatchNamespace: "foons",
-		IngressClass:   "kong-internal",
+		IngressClass:   "kong-pkg",
 		ElectionID:     "new-election-id",
 
 		PublishService:         "published-kong-proxy",
@@ -152,7 +152,7 @@ func TestOverrideViaCLIFlags(t *testing.T) {
 		SyncPeriod:    10 * time.Second,
 		SyncRateLimit: 0.9,
 
-		APIServerHost:      "kube-apiserver.internal",
+		APIServerHost:      "kube-apiserver.pkg",
 		KubeConfigFilePath: "/path/to/kubeconfig",
 
 		EnableProfiling:  false,
